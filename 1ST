@@ -1,0 +1,92 @@
+//PROGRAM 1
+LDA, 2000H
+MOV B,A 
+LDA, 4000H
+STA 2000H
+MOV A, B
+STA 4000H
+
+
+
+
+//PROGRAM 2
+
+LXI H, 2000H
+LXI D, 4000H
+MOV B,M
+LDAX D
+MOV M, A
+MOV A, B
+STAX D
+HLT
+
+
+// PROGRAM 3
+
+
+(4000H) = 14H
+(4001H) = 89H
+RESULT = 14H + 89H = 9DH
+
+LXI H 4000H
+MOV A, M
+INX H
+ADD M
+INX H
+MOV M,A 
+HLT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
